@@ -34,7 +34,7 @@ if (argv.v || argv.version) {
     var filepath = path.resolve(output, path.basename(file));
 
     fs.mkdir(output, function () {
-      fs.writeFile(filepath, content);
+      fs.writeFileSync(filepath, content);
     });
   });
 
